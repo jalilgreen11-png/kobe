@@ -24,29 +24,6 @@
       "level": "Beginner to Intermediate",
       "category": "Arabic"
     },
-    {
-      "id": "bulugh-tuesday",
-      "title": "Bulugh al-Maram — Hadith of Rulings",
-      "arabic": "بلوغ المرام",
-      "day": "Every Tuesday",
-      "time": "After Isha",
-      "teacher": "Ustadh Dawood",
-      "teacherBio": "Graduate of the Islamic University of Madinah",
-      "description": "The classic collection of Ibn Hajar al-Asqalani — studying the ahadith of rulings with their fiqh benefits, grade, and application.",
-      "level": "Intermediate",
-      "category": "Fiqh / Hadith"
-    },
-    {
-      "id": "bulugh-thursday",
-      "title": "Bulugh al-Maram — Continued",
-      "arabic": "بلوغ المرام",
-      "day": "Every Thursday",
-      "time": "After Isha",
-      "teacher": "Ustadh Dawood",
-      "teacherBio": "Graduate of the Islamic University of Madinah",
-      "description": "The weekly continuation of Bulugh al-Maram — building a student's foundation in the fiqh of worship, transactions, and daily life.",
-      "level": "Intermediate",
-      "category": "Fiqh / Hadith"
-    }
+   
   ]
 }
