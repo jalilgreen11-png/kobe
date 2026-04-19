@@ -1,0 +1,36 @@
+{
+  "events": [
+    {
+      "title": "Weekend Islamic School — New Year Begins",
+      "date": "2026-09-05",
+      "time": "Saturdays & Sundays, 10:00 AM",
+      "location": "Masjid Al-Mumin",
+      "description": "Registration now open for the 1447-1448 school year. Qur'an, Arabic, Salah, Tawheed, and the 40 Hadith of Imam al-Nawawi.",
+      "link": "weekend-school.html"
+    },
+    {
+      "title": "Community Iftar",
+      "date": "2026-05-22",
+      "time": "Before Maghrib",
+      "location": "Masjid Al-Mumin",
+      "description": "Join us for a community iftar open to all. Volunteers welcome. All sadaqah for meals is appreciated.",
+      "link": "donate.html"
+    },
+    {
+      "title": "Lecture: The Manners of the Seeker of Knowledge",
+      "date": "2026-06-14",
+      "time": "After Maghrib",
+      "location": "Masjid Al-Mumin Main Hall",
+      "description": "A special sitting on the adab of the student of knowledge, drawing from classical works of the Salaf.",
+      "link": "#"
+    },
+    {
+      "title": "Annual Fundraiser Dinner",
+      "date": "2026-07-19",
+      "time": "6:30 PM",
+      "location": "Masjid Al-Mumin",
+      "description": "Support the masjid's programs, youth education, and ongoing operations. Family-friendly evening with dinner and reminders.",
+      "link": "donate.html"
+    }
+  ]
+}

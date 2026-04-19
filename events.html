@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events &mdash; Masjid Al-Mumin</title>
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="site-header-mount"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Events</div>
+    <h1>What's <em>coming up</em></h1>
+    <p>Lectures, community gatherings, Ramadan programs, and more. Join us at the masjid.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container-narrow">
+    <div id="events-full"></div>
+  </div>
+</section>
+
+<section style="background: var(--cream);">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="eyebrow">Stay Connected</div>
+      <h2>Never miss <em>a reminder</em></h2>
+      <p>Get event announcements, class updates, and masjid news by email. No spam, just what matters.</p>
+    </div>
+
+    <form class="form-card reveal" onsubmit="event.preventDefault(); handleSubscribe(this);">
+      <div class="form-grid">
+        <div class="field">
+          <label>First Name</label>
+          <input type="text" name="firstName" required>
+        </div>
+        <div class="field">
+          <label>Last Name</label>
+          <input type="text" name="lastName" required>
+        </div>
+        <div class="form-row-full field">
+          <label>Email</label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="form-row-full" style="text-align: center; margin-top: 1rem;">
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+function handleSubscribe(form) {
+  const data = Object.fromEntries(new FormData(form).entries());
+  console.log('Subscribed:', data);
+  form.innerHTML = `
+    <div style="text-align: center; padding: 2rem 1rem;">
+      <div style="font-size: 3rem;">✅</div>
+      <h3 style="font-style: italic;">Jazak Allahu khair, ${data.firstName}</h3>
+      <p>You're on the list.</p>
+    </div>
+  `;
+}
+</script>
+
+<div id="site-footer-mount"></div>
+
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

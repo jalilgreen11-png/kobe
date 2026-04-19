@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate &mdash; Masjid Al-Mumin</title>
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="site-header-mount"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Sadaqah Jariyah</div>
+    <h1>Support the <em>masjid</em></h1>
+    <p>"Whoever builds a masjid for the sake of Allah, Allah will build for him a house like it in Paradise." — Sahih al-Bukhari</p>
+  </div>
+</section>
+
+<section>
+  <div class="container-narrow">
+    <form class="form-card reveal" onsubmit="event.preventDefault(); handleDonate(this);">
+      <div class="eyebrow">Make a Donation</div>
+      <h2>Every dollar <em>is an investment</em></h2>
+      <p style="text-align: center; color: var(--ink-muted); margin-bottom: 2rem;">
+        Your sadaqah supports daily prayer, classes, weekend school, and community programs.
+      </p>
+
+      <div class="field">
+        <label>Select an amount</label>
+        <div class="donate-amounts">
+          <button type="button" class="donate-amount" data-amount="25">$25</button>
+          <button type="button" class="donate-amount selected" data-amount="50">$50</button>
+          <button type="button" class="donate-amount" data-amount="100">$100</button>
+          <button type="button" class="donate-amount" data-amount="250">$250</button>
+        </div>
+      </div>
+
+      <div class="form-grid" style="margin-top: 1.5rem;">
+        <div class="form-row-full field">
+          <label>Or enter custom amount ($)</label>
+          <input type="number" id="donate-custom" name="amount" value="50" min="1">
+        </div>
+
+        <div class="form-row-full field">
+          <label>Donation Type</label>
+          <select name="type">
+            <option value="general">General &mdash; wherever needed most</option>
+            <option value="sadaqah" id="sadaqah">Sadaqah Jariyah</option>
+            <option value="zakah" id="zakah">Zakah</option>
+            <option value="school">Weekend School</option>
+            <option value="ramadan">Ramadan Iftar</option>
+            <option value="building">Masjid Maintenance</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>First Name</label>
+          <input type="text" name="firstName" required>
+        </div>
+        <div class="field">
+          <label>Last Name</label>
+          <input type="text" name="lastName" required>
+        </div>
+        <div class="form-row-full field">
+          <label>Email (for receipt)</label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="form-row-full field">
+          <label>Frequency</label>
+          <select name="frequency">
+            <option>One-time</option>
+            <option>Monthly (recurring)</option>
+          </select>
+        </div>
+
+        <div class="form-row-full" style="text-align: center; margin-top: 1rem;">
+          <button type="submit" class="btn btn-primary">Proceed to Payment</button>
+          <p style="font-size: 0.85rem; color: var(--ink-muted); margin-top: 1rem;">
+            Secure payment processing. 100% of donations support the masjid.
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section style="background: var(--cream);">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Ways to Give</div>
+      <h2>More <em>than one path</em></h2>
+    </div>
+
+    <div class="programs-grid">
+      <div class="program-card reveal">
+        <div class="program-day">Online</div>
+        <h3>Credit / Debit</h3>
+        <p class="program-desc">Fastest way to give. Use the form above. Email receipt for tax deduction.</p>
+      </div>
+      <div class="program-card reveal">
+        <div class="program-day">Mobile</div>
+        <h3>Zelle / CashApp</h3>
+        <p class="program-desc">Send to <strong>info@masjidalmumin.org</strong> &mdash; add a note with your intention (sadaqah, zakah, etc).</p>
+      </div>
+      <div class="program-card reveal">
+        <div class="program-day">In Person</div>
+        <h3>At the Masjid</h3>
+        <p class="program-desc">Drop sadaqah in the donation box after prayer, or speak with the imam to arrange zakah distribution.</p>
+      </div>
+      <div class="program-card reveal">
+        <div class="program-day">By Mail</div>
+        <h3>Check</h3>
+        <p class="program-desc">Make checks payable to <strong>Masjid Al-Mumin</strong>. Contact us for the mailing address.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-narrow" style="text-align: center;">
+    <div class="prose" style="padding: 2rem 24px;">
+      <p style="font-family: var(--font-arabic); font-size: 1.6rem; color: var(--gold-deep); direction: rtl; line-height: 1.8;">
+        مَثَلُ ٱلَّذِينَ يُنفِقُونَ أَمْوَٰلَهُمْ فِى سَبِيلِ ٱللَّهِ كَمَثَلِ حَبَّةٍ أَنۢبَتَتْ سَبْعَ سَنَابِلَ فِى كُلِّ سُنۢبُلَةٍ مِّا۟ئَةُ حَبَّةٍ
+      </p>
+      <p style="font-style: italic; color: var(--ink-soft); max-width: 620px; margin: 1rem auto;">
+        "The example of those who spend their wealth in the way of Allah is like a seed that grows seven ears; in every ear there are a hundred grains." &mdash; Al-Baqarah 2:261
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+function handleDonate(form) {
+  const data = Object.fromEntries(new FormData(form).entries());
+  console.log('Donation:', data);
+  alert(`Thank you, ${data.firstName}!
+
+To complete your $${data.amount} donation, connect this form to Stripe, PayPal, or LaunchGood.
+
+See README for instructions.`);
+}
+</script>
+
+<div id="site-footer-mount"></div>
+
+<script src="js/layout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

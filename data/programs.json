@@ -1,0 +1,52 @@
+{
+  "programs": [
+    {
+      "id": "names-attributes",
+      "title": "The Names & Attributes of Allah",
+      "arabic": "أسماء الله وصفاته",
+      "day": "Every Friday",
+      "time": "After Maghrib",
+      "teacher": "Imam Ibn Al-Farooq",
+      "teacherBio": "Imam of Masjid Al-Mumin",
+      "description": "A study in the oneness of Allah's names and attributes, from the Qur'an and authentic Sunnah — upon the understanding of the Salaf al-Salih.",
+      "level": "All levels",
+      "category": "Aqeedah"
+    },
+    {
+      "id": "quranic-arabic",
+      "title": "Qur'anic Arabic",
+      "arabic": "العربية القرآنية",
+      "day": "Every Saturday",
+      "time": "After Asr",
+      "teacher": "Imam Ibn Al-Farooq",
+      "teacherBio": "Imam of Masjid Al-Mumin",
+      "description": "Learn the language of the Qur'an — grammar, vocabulary, and the tools to understand Allah's Book in its original tongue.",
+      "level": "Beginner to Intermediate",
+      "category": "Arabic"
+    },
+    {
+      "id": "bulugh-tuesday",
+      "title": "Bulugh al-Maram — Hadith of Rulings",
+      "arabic": "بلوغ المرام",
+      "day": "Every Tuesday",
+      "time": "After Isha",
+      "teacher": "Ustadh Dawood",
+      "teacherBio": "Graduate of the Islamic University of Madinah",
+      "description": "The classic collection of Ibn Hajar al-Asqalani — studying the ahadith of rulings with their fiqh benefits, grade, and application.",
+      "level": "Intermediate",
+      "category": "Fiqh / Hadith"
+    },
+    {
+      "id": "bulugh-thursday",
+      "title": "Bulugh al-Maram — Continued",
+      "arabic": "بلوغ المرام",
+      "day": "Every Thursday",
+      "time": "After Isha",
+      "teacher": "Ustadh Dawood",
+      "teacherBio": "Graduate of the Islamic University of Madinah",
+      "description": "The weekly continuation of Bulugh al-Maram — building a student's foundation in the fiqh of worship, transactions, and daily life.",
+      "level": "Intermediate",
+      "category": "Fiqh / Hadith"
+    }
+  ]
+}
